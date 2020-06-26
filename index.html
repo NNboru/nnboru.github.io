@@ -12,7 +12,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:description" content="Create live wallpaper from your pics, modify its animation and pop it!" />
     <meta property="og:url" content="https://nnboru.github.io" />
-    <meta property="og:image" content="https://github.com/NNboru/nnboru.github.io/raw/master/files/logo.png" />
+    <meta property="og:image" itemprop="image" content="https://github.com/NNboru/nnboru.github.io/raw/master/files/logo.png" />
     <meta property="og:image:width" content="256">
     <meta property="og:image:height" content="256">
 
@@ -177,7 +177,7 @@
     Try it now!
     Create live wallpaper from your pics, modify its animation and pop it!
     `
-    let url = 'https://poka.pythonanywhere.com'
+    let url = 'https://nnboru.github.io'
     if(navigator.share){
         myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${url}'><img src='files/share.png'/></a>`)
     }
