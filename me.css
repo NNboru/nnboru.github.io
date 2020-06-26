@@ -290,9 +290,9 @@ img:hover + .bai>div, a:hover .bai>div{
         transform: translate(2px,6px);
     }
     .marker div{
-        width:4px;
-        height:4px;
-        top: -4px;
+        width:6px;
+        height:6px;
+        top: -3px;
     }
 }
 
