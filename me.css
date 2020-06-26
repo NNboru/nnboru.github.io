@@ -126,7 +126,7 @@ footer .bigicon{
 #me{
     font-size: 1.4em;
     padding:10vh 10vw 10vh 10vw;
-    min-height:100vh;
+    min-height:95vh;
     background-image: url(files/me.png);
     background-repeat: no-repeat;
     /* background-origin: content-box; */
@@ -277,7 +277,7 @@ img:hover + .bai>div, a:hover .bai>div{
 
 @media screen and (max-width: 500px){
     body{
-        font: 14px Comic Sans MS, Comic Sans, cursive;
+        font: 14px Comic Sans MS, Comic Sans, helvetica;
     }
     a>img, h2>img{
         width:20px;
