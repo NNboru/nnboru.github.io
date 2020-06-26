@@ -177,9 +177,9 @@
     Try it now!
     Create live wallpaper from your pics, modify its animation and pop it!
     `
-    let url = 'https://play.google.com/store/apps/details?id=com.rohan_rawat_nn_pop_pic_maker'
+    let url = 'https://poka.pythonanywhere.com'
     if(navigator.share){
-        myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${text}\n${url}'><img src='files/share.png'/></a>`)
+        myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${url}'><img src='files/share.png'/></a>`)
     }
     function sharemyapp(){
         navigator.share({
