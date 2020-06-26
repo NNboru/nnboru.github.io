@@ -47,7 +47,7 @@ h4{
 }
 header, footer{
     background: brown;
-    height:max(5vh,60px);
+    height:max(5vh,40px);
     display:grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(3,33.3%);
@@ -80,7 +80,7 @@ dialog{
     animation-delay: .1s;
 }
 dialog::backdrop {
-    background: linear-gradient(0deg, #0f04, transparent);
+    background: linear-gradient(0deg, #0f02, transparent);
   }
 .dialog{
     display: grid;
@@ -114,8 +114,8 @@ a>img, h2>img{
     transform: translate(2px,4px);
 }
 .bigicon{
-    width:50px;
-    height:50px;
+    width:36px;
+    height:36px;
     transform: translate(2px,12px);
 }
 footer .bigicon{
