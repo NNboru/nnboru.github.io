@@ -67,7 +67,7 @@ img{
     width:100%;
     height:94%;
     position: relative;
-    top: 3%;
+    top: 1%;
 }
 dialog{
     top:max(20vh, 100px);
@@ -145,10 +145,10 @@ footer .bigicon{
 }
 #fake{
     height:20vh;
-    background: linear-gradient(transparent 1px, black);
+    background: linear-gradient(transparent 1px, #0a0a0a);
 }
 #main-content{
-    background-color: #000e;
+    background-color: #0a0a0a;
 }
 .bio{
     padding:10vh 10vw 10vh 10vw;
@@ -239,7 +239,7 @@ img:hover + .uper>div, a:hover .uper>div{
     top:-50px;
 }
 img:hover + .bai>div, a:hover .bai>div{
-    left:-20px;
+    left:-26px;
 }
 
 .marker{
