@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>myself</title>
+    <title>Rohannn</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta property="og:title" content="pop pic maker" />
-    <meta property="og:description" content="Create live wallpaper from your pics, modify its animation and pop it!" />
-    <meta property="og:url" content="https://nnboru.github.io" />
-    <meta property="og:image" itemprop="image" content="https://github.com/NNboru/nnboru.github.io/raw/master/files/logo.png" />
+    <!-- <meta property="og:title" content="pop pic maker" /> -->
+    <meta property="og:description" content="Intro page of Rohan Rawat" />
+    <!-- <meta property="og:url" content="https://nnboru.github.io" /> -->
+    <meta property="og:image" itemprop="image" content="https://github.com/NNboru/nnboru.github.io/raw/master/files/me.png" />
 
     <link rel=stylesheet href='me.css' />
 </head>
@@ -47,15 +47,18 @@
         </div>
     </dialog>
 
+    <div id=me>
+        <h4>Hey! I am Rohan</h4>
+        <p>A programming nerd.</p>
+        <p>Love dogs. </p>
+        <p>Dawdles a lot. </p>
+        <p>Interested in chat with me! <a onclick='popup.showModal()' class='coffee'>drop a message</a> &nbsp;&nbsp; </p>
+        <h4>◠‿◠</h4>
+    </div>
+
     <div id=main>
-        <div id=me>
-            <h4>Hey! I am Rohan</h4>
-            <p>A programming nerd.</p>
-            <p>Love dogs. </p>
-            <p>Dawdles a lot. </p>
-            <p>Interested in chat with me! <a onclick='popup.showModal()' class='coffee'>drop a message</a> &nbsp;&nbsp; </p>
-            <h4>◠‿◠</h4>
-        </div>
+        <div id=fake></div>
+        <div id=main-content>
         <h1>What do I know?</h1>
         <div class=bio>
             <p>I am a compititive programmer, web & mobile developer, data analyst and graphic designer 
@@ -135,45 +138,42 @@
                 
             </div>
         </div>
+    
+        <br />
+        <br />
+
+        <footer>
+            <!-- social -->
+            <a href='https://facebook.com/rohan.rawat.125' target='_blank'>
+                <div class='alt uper'><div>Facebook<div class='marker'><div></div></div></div></div>
+                <img src='files/fb.png' class='bigicon'/>
+            </a>
+            <a href='https://instagram.com/rohanrawatnn' target='_blank'>
+                <div class='alt uper'><div>Instagram<div class='marker'><div></div></div></div></div>
+                <img src='files/insta.png' class='bigicon'/>
+            </a>
+            <a href='https://twitter.com/Rohannn40836251' target='_blank'>
+                <div class='alt uper'><div>Twitter<div class='marker'><div></div></div></div></div>
+                <img src='files/twitter.png' class='bigicon'/>
+            </a>
+            <a href='https://mail.google.com/mail/?view=cm&to=rohan.rawat.9897@gmail.com' target='_blank'>
+                <div class='alt uper bai'><div>Gmail<div class='marker'><div></div></div></div></div>
+                <img src='files/gmail.png' class='bigicon'/>
+            </a>
+            <a href='https://www.linkedin.com/in/rohannn' target='_blank'>
+                <div class='alt uper bai'><div>linkedin<div class='marker'><div></div></div></div></div>
+                <img src='files/linkedin.png' class='bigicon'/>
+            </a>
+        </footer>
+        </div>
     </div>
-    <br />
-    <br />
-
-    <footer>
-        <!-- social -->
-        <a href='https://facebook.com/rohan.rawat.125' target='_blank'>
-            <div class='alt uper'><div>Facebook<div class='marker'><div></div></div></div></div>
-            <img src='files/fb.png' class='bigicon'/>
-        </a>
-        <a href='https://instagram.com/rohanrawatnn' target='_blank'>
-            <div class='alt uper'><div>Instagram<div class='marker'><div></div></div></div></div>
-            <img src='files/insta.png' class='bigicon'/>
-        </a>
-        <a href='https://twitter.com/Rohannn40836251' target='_blank'>
-            <div class='alt uper'><div>Twitter<div class='marker'><div></div></div></div></div>
-            <img src='files/twitter.png' class='bigicon'/>
-        </a>
-        <a href='https://mail.google.com/mail/?view=cm&to=rohan.rawat.9897@gmail.com' target='_blank'>
-            <div class='alt uper bai'><div>Gmail<div class='marker'><div></div></div></div></div>
-            <img src='files/gmail.png' class='bigicon'/>
-        </a>
-        <a href='https://www.linkedin.com/in/rohannn' target='_blank'>
-            <div class='alt uper bai'><div>linkedin<div class='marker'><div></div></div></div></div>
-            <img src='files/linkedin.png' class='bigicon'/>
-        </a>
-    </footer>
-
     
 
 <script>
-    let text = `*POP PIC MAKER*
-
-    Try it now!
-    Create live wallpaper from your pics, modify its animation and pop it!
-    `
     let url = 'https://nnboru.github.io'
     if(navigator.share){
-        myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${url}'><img src='files/share.png'/></a>`)
+        myapp.insertAdjacentHTML('beforeEnd',`<a onclick='sharemyapp()'><img src='files/share.png'/></a>`)
+        //myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${url}'><img src='files/share.png'/></a>`)
     }
     function sharemyapp(){
         navigator.share({
