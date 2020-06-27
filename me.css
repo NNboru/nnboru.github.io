@@ -140,6 +140,7 @@ footer .bigicon{
 #main{
     position: absolute;
     display: grid;
+    width:100%;
     top:80vh;
 }
 #fake{
