@@ -1,13 +1,57 @@
 <html>
+<head>
+	<title>Rohannn</title>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta property="og:title" content="Resume" />
+    <meta property="og:description" content="Rohan Rawat" />
+    <!-- <meta property="og:url" content="https://nnboru.github.io" /> -->
+    <meta property="og:image" itemprop="image" content="https://github.com/NNboru/nnboru.github.io/raw/master/files/me2.png" />
+
+    <link rel=stylesheet href='me.css' />
+<head>
 <body>
-<div
- class="canva-embed"
- data-design-id="DAEAz-E2Al4"
- data-height-ratio="1.4143"
- style="padding:141.4286% 5px 5px 5px;background:rgba(0,0,0,0.03);border-radius:8px;"
-></div>
-<script async src="https:&#x2F;&#x2F;sdk.canva.com&#x2F;v1&#x2F;embed.js"></script>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEAz-E2Al4&#x2F;view?utm_content=DAEAz-E2Al4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">ResumeRohan</a> by Rohan Rawat
+	<header>
+        <a href='/' style='color:aqua'>Home<img src='files/home.png'/></a>
+        <a href='https://github.com/NNboru' target='_blank'>
+            Github
+            <img src='files/github.png'/>
+            <div class='alt'><div><div class='marker'><div></div></div>View Code</div></div>
+        </a>
+        <a id=contact>Contact<img src='files/chat.png'/></a>
+    </header>
+
+    <dialog id=popup>
+        <div class='dialog'>
+            <div id=cross>❌</div>
+            <img src='files/hi.png'/>
+            <div>
+                <div class='span'>
+                    <img src='files/call.png'/>
+                    <div class='alt'><div><div class='marker'><div></div></div>call me</div></div>
+                </div>
+                &nbsp;91-9897644759&nbsp;
+                <div class='span'>
+                    <img src='files/whatsapp.png'/>
+                    <div class='alt'><div><div class='marker'><div></div></div>whatsapp me</div></div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+	<div
+	 class="canva-embed"
+	 data-design-id="DAEAz-E2Al4"
+	 data-height-ratio="1.4143"
+	 style="padding:141.4286% 5px 5px 5px;background:rgba(0,0,0,0.03);border-radius:8px;"
+	></div>
+	
+	<script async src="https:&#x2F;&#x2F;sdk.canva.com&#x2F;v1&#x2F;embed.js"></script>
+
+<script>
+    contact.onclick=()=>popup.showModal()
+    cross.onclick=()=>popup.close()
+</script>
 </body>
 </html>
 
