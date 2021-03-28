@@ -20,13 +20,11 @@
         <div class=dash></div>
     </div> -->
     <header>
-        <a href='aboutme.html'>AboutMe<img src='files/user.png'/></a>
-        <a href='https://github.com/NNboru' target='_blank'>
-            Github
-            <img src='files/github.png'/>
-            <div class='alt'><div><div class='marker'><div></div></div>View Code</div></div>
+        <a id=heada1>AboutMe<img src='files/user.png'/></a>
+        <a id=heada2>
+            Projects <img src='files/github.png'/>
         </a>
-        <a id=contact>Contact<img src='files/chat.png'/></a>
+        <a id=heada3>Contact<img src='files/chat.png'/></a>
     </header>
 
     <dialog id=popup>
@@ -54,25 +52,29 @@
         <p>Dawdles a lot. </p>
         <p>Interested in chat with me! <a onclick='popup.showModal()' class='coffee'>drop a message</a> &nbsp;&nbsp; </p>
         <h4>◠‿◠</h4>
+        <img id=mebg src="files/me0.png" />
     </div>
 
     <div id=main>
         <div id=fake></div>
         <div id=main-content>
-        <h1>What do I know?</h1>
+        <h1>About me</h1>
         <div class=bio>
-            <p>I am a compititive programmer, web & mobile developer, data analyst and graphic designer 
-                with python.</p>
-            <p>"Logic" is what I strive for or else its just boring! </p>
+            <p>My name is Rohan Rawat. I belong to Uttarkashi, Uttarakhand and currently I am living in Dehradun.</p>
+            <p>I'm an M.Tech CSE student at NITD with specialization in Data Analytics (2020-22).</p>
+            <p>I did B.Tech in Computer Science from G.B Pant College of Engineering, Uttarakhand. (2016-20)</p>
+            <p>Mostly I'm a computer geek but as my hobbies I play football, go for a run and I love travelling. </p>
+            <p>I am passionate about programming. I want to keep learning and improving, and explore all the wonders that 
+                a computer can achieve in this world! </p> 
+            <!-- <p>"Logic" is what I strive for or else its just boring! </p> -->
             <h4>¬_¬</h4>
         </div>
-        <br />
-        <br />
-        <br />
-        <div>
+
+        <div id=projectdiv>
             <h1>Some of my work</h1>
             <br />
             <div id=projects>
+
                 <div class='out-item'>
                     <div class=item>
                         <div>
@@ -93,6 +95,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class='out-item'>
                     <div class=item>
                         <div>
@@ -113,6 +116,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class='out-item'>
                     <div class=item>
                         <div>
@@ -123,7 +127,7 @@
                             <p>Try out our bot with features likes equation plotting, csv statistical-graphical
                                 analysis, cs problem-refering and of course basic chat.</p>
                             <div class='link'>
-                                <a href='#' target='_blank'>
+                                <a href='https://github.com/nnboru/botbase' target='_blank'>
                                     <img src='files/github.png'/>
                                     <div class='alt'><div><div class='marker'><div></div></div>see code</div></div>
                                 </a>
@@ -134,37 +138,107 @@
                         </div>
                     </div>
                 </div>
+
+                <div class='out-item'>
+                    <div class=item>
+                        <div>
+                            <img src='files/ludo2.png' />
+                        </div>
+                        <div class='item-main'>
+                            <h2>LUDO<img src='files/dice.png' class='bigicon' /></h2>
+                            <p>A very light-weight LUDO webgame. Just start playing with your friends whenever and wherever you want.</p>
+                            <div class='link'>
+                                <a href='https://github.com/nnboru/ludo' target='_blank'>
+                                    <img src='files/github.png'/>
+                                    <div class='alt'><div><div class='marker'><div></div></div>see code</div></div>
+                                </a>
+                                <a href='https://nnboru.github.io/ludo' target='_blank'>
+                                    OPEN<img src='files/arrow.png' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
+                <div class='out-item'>
+                    <div class=item>
+                        <div>
+                            <img src='files/hover.png' />
+                        </div>
+                        <div class='item-main'>
+                            <h2>HOVER<img src='files/ufo.png' class='bigicon' /></h2>
+                            <p>HOVER is a click free hovering webgame. The sad-smiley is waiting for you to resque him. 
+                                Along with infinite number of random levels, this game also tests your mouse control.
+                            </p>
+                            <div class='link'>
+                                <a href='https://github.com/nnboru/hover' target='_blank'>
+                                    <img src='files/github.png'/>
+                                    <div class='alt'><div><div class='marker'><div></div></div>see code</div></div>
+                                </a>
+                                <a href='https://nnboru.github.io/hover' target='_blank'>
+                                    OPEN<img src='files/arrow.png' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
-    
-        <br />
+        
+        <div id=contactdiv>
+            <h1>Contact me</h1>
+            <div id=contact>
+                <p>Feel free to get in touch ... for anything and anytime ;)</p>
+                <div class='con-grid'>
+                    <img src='files/hi.png'/>
+                    <div>
+                        <div class='span'>
+                            <img src='files/call.png'/>
+                            <div class='alt'><div><div class='marker'><div></div></div>call me</div></div>
+                        </div>
+                        &nbsp;91-9897644759&nbsp;
+                        <div class='span'>
+                            <img src='files/whatsapp.png'/>
+                            <div class='alt'><div><div class='marker'><div></div></div>whatsapp me</div></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;to=rohan.rawat.9897@gmail.com">
+                            rohan.rawat.9897@gmail.com</a>
+                    </div>
+                </div>
+                <br />
+
+                <footer>
+                    <!-- social -->
+                    <a href='https://facebook.com/rohan.rawat.125' target='_blank'>
+                        <div class='alt uper'><div>Facebook<div class='marker'><div></div></div></div></div>
+                        <img src='files/fb.png' class='bigicon'/>
+                    </a>
+                    <a href='https://instagram.com/rohanrawatnn' target='_blank'>
+                        <div class='alt uper'><div>Instagram<div class='marker'><div></div></div></div></div>
+                        <img src='files/insta.png' class='bigicon'/>
+                    </a>
+                    <a href='https://twitter.com/Rohannn40836251' target='_blank'>
+                        <div class='alt uper'><div>Twitter<div class='marker'><div></div></div></div></div>
+                        <img src='files/twitter.png' class='bigicon'/>
+                    </a>
+                    <a href='https://mail.google.com/mail/?view=cm&to=rohan.rawat.9897@gmail.com' target='_blank'>
+                        <div class='alt uper bai'><div>Gmail<div class='marker'><div></div></div></div></div>
+                        <img src='files/gmail.png' class='bigicon'/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/rohannn' target='_blank'>
+                        <div class='alt uper bai'><div>linkedin<div class='marker'><div></div></div></div></div>
+                        <img src='files/linkedin.png' class='bigicon'/>
+                    </a>
+                </footer>
+
+            </div>
+        </div>
+
         <br />
 
-        <footer>
-            <!-- social -->
-            <a href='https://facebook.com/rohan.rawat.125' target='_blank'>
-                <div class='alt uper'><div>Facebook<div class='marker'><div></div></div></div></div>
-                <img src='files/fb.png' class='bigicon'/>
-            </a>
-            <a href='https://instagram.com/rohanrawatnn' target='_blank'>
-                <div class='alt uper'><div>Instagram<div class='marker'><div></div></div></div></div>
-                <img src='files/insta.png' class='bigicon'/>
-            </a>
-            <a href='https://twitter.com/Rohannn40836251' target='_blank'>
-                <div class='alt uper'><div>Twitter<div class='marker'><div></div></div></div></div>
-                <img src='files/twitter.png' class='bigicon'/>
-            </a>
-            <a href='https://mail.google.com/mail/?view=cm&to=rohan.rawat.9897@gmail.com' target='_blank'>
-                <div class='alt uper bai'><div>Gmail<div class='marker'><div></div></div></div></div>
-                <img src='files/gmail.png' class='bigicon'/>
-            </a>
-            <a href='https://www.linkedin.com/in/rohannn' target='_blank'>
-                <div class='alt uper bai'><div>linkedin<div class='marker'><div></div></div></div></div>
-                <img src='files/linkedin.png' class='bigicon'/>
-            </a>
-        </footer>
         </div>
     </div>
     
@@ -182,8 +256,23 @@
             url:'https://play.google.com/store/apps/details?id=com.rohan_rawat_nn_pop_pic_maker'
         })
     }
-    contact.onclick=()=>popup.showModal()
-    cross.onclick=()=>popup.close()
+    heada3.onclick=()=>popup.showModal();
+    cross.onclick=()=>popup.close();
+
+    heada1.onclick=()=>{
+        let tmp = document.getElementById('main-content');
+        tmp.scrollIntoView({behavior:'smooth'});
+        // window.scrollTo({top:tmp.offsetTop, behavior:'smooth'});
+    }
+    heada2.onclick=()=>{
+        projectdiv.scrollIntoView({behavior:'smooth'});
+    }
+    
+    function updateHead() {
+    // Do whatever
+    requestAnimationFrame(updateHead);
+    }
+    requestAnimationFrame(updateHead);
 
 </script>
 </body>
