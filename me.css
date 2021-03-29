@@ -81,6 +81,9 @@ header, footer{
     padding: 6px 2px;
     margin: 3px;
     box-shadow: 0 0 2px black;
+    border-radius: 25%;
+    background-color: ghostwhite;
+    border-style: double;
 }
 .menuline{
     width: 80%;
@@ -169,7 +172,7 @@ footer .bigicon{
 #me{
     position: fixed;
     font-size: 1.4em;
-    padding:10vh 10vw 2vh 10vw;
+    padding:10vh 10vw 4vh 10vw;
     box-sizing: border-box;
     min-height:95vh;
     width:100vw;
