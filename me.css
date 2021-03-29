@@ -56,7 +56,6 @@ header, footer{
     justify-items: center;
     width:100%;
     border-radius: 0;
-    -webkit-text-stroke-width: medium;
     font-variant-caps: small-caps;
     font-size:1.2em;
 }
@@ -93,6 +92,7 @@ header, footer{
 
 
 header{
+    font-weight: bold;
     position:fixed;
     z-index: 1;
     opacity: .9;
@@ -425,7 +425,6 @@ img:hover + .bai>div, a:hover .bai>div{
         padding-left:10%;
         opacity: 1;
         transform: translate(-50%, -150%) scale(.5);
-        -webkit-text-stroke-width:thin;
     }
 
     a>img, h2>img{
