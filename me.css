@@ -60,10 +60,41 @@ header, footer{
     font-variant-caps: small-caps;
     font-size:1.2em;
 }
+.head-show{
+    transform:initial;
+}
+#menubut{
+    cursor: pointer;
+}
+#menudiv{
+    display: none;
+    position:fixed;
+    z-index: 2;
+    opacity: .9;
+}
+#menudiv>button{
+    width: 45px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 6px 2px;
+    margin: 3px;
+    box-shadow: 0 0 2px black;
+}
+.menuline{
+    width: 80%;
+    height: 50%;
+    background-color: brown;
+}
+
+
 header{
     position:fixed;
     z-index: 1;
-    opacity: .3;
+    opacity: .9;
+    box-shadow: 0 6px 12px #703e3e;
+    background: linear-gradient( 90deg, #db8d8db0 ,#a52a2ab0);
 }
 header:hover{
     opacity:1;
@@ -162,7 +193,7 @@ footer .bigicon{
     width: max(30vw,30vh);
     height: auto;
     border-radius: 40%;
-    top:16vw;
+    top:14vw;
     right: calc(6vh + 2vw);
     filter: drop-shadow(0 0 14px #000008);
 }
@@ -277,6 +308,13 @@ footer .bigicon{
     height:30px;
 }
 
+.copyright{
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: brown;;
+}
+
 /* my custom alt. start- 
 <div class='alt'><div><div class='marker'><div></div></div>call me</div></div>  for lower
 <div class='alt uper bai'><div>Gmail<div class='marker'><div></div></div></div></div>  for uper left */
@@ -363,11 +401,30 @@ img:hover + .bai>div, a:hover .bai>div{
     }
 }
 
+@media (pointer:coarse) {
+    header{
+        opacity: 1;
+    }
+}
 
-@media screen and (max-width: 500px), (max-height:500px){
+/* @media screen and (max-width: 500px), (max-height:500px){ */
+@media screen and (max-aspect-ratio: 3/4){
     body{
         font: 14px Comic Sans MS, Comic Sans, helvetica;
     }
+
+    #menudiv{
+        display: initial;
+    }
+    header{
+        grid-auto-flow: row;
+        grid-template-columns: initial;
+        padding-left:10%;
+        opacity: 1;
+        transform: translate(-50%, -150%) scale(.5);
+        -webkit-text-stroke-width:thin;
+    }
+
     a>img, h2>img{
         width:20px;
         height:20px;

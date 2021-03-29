@@ -19,7 +19,14 @@
         <div class=dash></div>
         <div class=dash></div>
     </div> -->
-    <header>
+    <div id=menudiv>
+        <button type="button" id=menubut>
+            <div class='menuline'></div>
+            <div class='menuline'></div>
+            <div class='menuline'></div>
+        </button>
+    </div>
+    <header id=headbar>
         <a id=heada1>AboutMe<img src='files/user.png'/></a>
         <a id=heada2>
             Projects <img src='files/github.png'/>
@@ -27,7 +34,7 @@
         <a id=heada3>Contact<img src='files/chat.png'/></a>
     </header>
 
-    <dialog id=popup>
+    <!-- <dialog id=popup>
         <div class='dialog'>
             <div id=cross>❌</div>
             <img src='files/hi.png'/>
@@ -43,7 +50,7 @@
                 </div>
             </div>
         </div>
-    </dialog>
+    </dialog> -->
 
     <div id=me>
         <h4>Hey! I am Rohan</h4>
@@ -52,7 +59,7 @@
         <p>Dawdles a lot. </p>
         <p>Interested in chat with me! <a onclick='popup.showModal()' class='coffee'>drop a message</a> &nbsp;&nbsp; </p>
         <h4>◠‿◠</h4>
-        <img id=mebg src="files/me0.png" />
+        <img id=mebg src="files/me.png" />
     </div>
 
     <div id=main>
@@ -65,7 +72,7 @@
             <p>I did B.Tech in Computer Science from G.B Pant College of Engineering, Uttarakhand. (2016-20)</p>
             <p>Mostly I'm a computer geek but as my hobbies I play football, go for a run and I love travelling. </p>
             <p>I am passionate about programming. I want to keep learning and improving, and explore all the wonders that 
-                a computer can achieve in this world! </p> 
+                computers can achieve in this world! </p> 
             <!-- <p>"Logic" is what I strive for or else its just boring! </p> -->
             <h4>¬_¬</h4>
         </div>
@@ -239,42 +246,12 @@
 
         <br />
 
-        </div>
+        <div class='copyright'> @ no copyrights</div>
+    </div>
     </div>
     
 
-<script>
-    let url = 'https://nnboru.github.io'
-    if(navigator.share){
-        myapp.insertAdjacentHTML('beforeEnd',`<a onclick='sharemyapp()'><img src='files/share.png'/></a>`)
-        //myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${url}'><img src='files/share.png'/></a>`)
-    }
-    function sharemyapp(){
-        navigator.share({
-            title:'pop pic maker',
-            message:'Try it now!\nCreate live wallpaper from your pics, modify its animation and pop it!',
-            url:'https://play.google.com/store/apps/details?id=com.rohan_rawat_nn_pop_pic_maker'
-        })
-    }
-    heada3.onclick=()=>popup.showModal();
-    cross.onclick=()=>popup.close();
-
-    heada1.onclick=()=>{
-        let tmp = document.getElementById('main-content');
-        tmp.scrollIntoView({behavior:'smooth'});
-        // window.scrollTo({top:tmp.offsetTop, behavior:'smooth'});
-    }
-    heada2.onclick=()=>{
-        projectdiv.scrollIntoView({behavior:'smooth'});
-    }
-    
-    function updateHead() {
-    // Do whatever
-    requestAnimationFrame(updateHead);
-    }
-    requestAnimationFrame(updateHead);
-
-</script>
+<script src='me.js'></script>
 </body>
 
 </html>
