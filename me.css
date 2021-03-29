@@ -175,7 +175,7 @@ footer .bigicon{
     padding:10vh 10vw 4vh 10vw;
     box-sizing: border-box;
     min-height:95vh;
-    width:100vw;
+    width:100%;
     display:grid;
     align-content: end;
 }
