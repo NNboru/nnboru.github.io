@@ -165,7 +165,7 @@ a>img, h2>img{
 .bigicon{
     width:60px;
     height:60px;
-    transform: translate(2px,12px);
+    transform: translate(2px,18px);
 }
 footer .bigicon{
     transform: translate(0px,4px);
@@ -441,7 +441,7 @@ img:hover + .bai>div, a:hover .bai>div{
     .bigicon{
         width:30px;
         height:30px;
-        transform: translate(2px,18px);
+        transform: translate(2px,6px);
     }
     .marker div{
         width:6px;
