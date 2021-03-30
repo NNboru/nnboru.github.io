@@ -47,10 +47,10 @@ function updateA(atag, elem){
     else if(bottom>h) val=num;
     else val=bottom/h*num;
 
-    let text, c='#bf3a';
+    let text, c='#bf3a', blur=2+val/2;
     text=val==0?'none':
-        `${val}px ${val}px ${val}px ${c}, ${val}px -${val}px ${val}px ${c}, 
-        -${val}px -${val}px ${val}px ${c}, -${val}px ${val}px ${val}px ${c}, 0 0 ${val}px ${c}`
+        `${val}px ${val}px ${blur}px ${c}, ${val}px -${val}px ${blur}px ${c}, 
+        -${val}px -${val}px ${blur}px ${c}, -${val}px ${val}px ${blur}px ${c}, 0 0 ${blur}px ${c}`
     atag.style['text-shadow']=text;
 }
 

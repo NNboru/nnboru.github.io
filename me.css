@@ -96,14 +96,16 @@ header{
     position:fixed;
     z-index: 1;
     opacity: .9;
-    box-shadow: 0 6px 12px #703e3e;
-    background: linear-gradient( 90deg, #db8d8db0 ,#a52a2ab0);
+    box-shadow: 0 2px 16px #ae5353;
+    background: linear-gradient( 90deg, #db8d8d ,#a52a2a);
 }
 header:hover{
     opacity:1;
 }
 header>a{
     padding:.8vh 0;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 footer{
     grid-template-columns: repeat(5,20%);
@@ -232,7 +234,7 @@ footer .bigicon{
     padding-top: 40px;
 }
 #projects{
-    margin:2%;
+    margin: 8% 2% 16%;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(min(440px,96vw),1fr));
     grid-gap: 2vh;
@@ -309,6 +311,7 @@ footer .bigicon{
 .con-grid .span img{
     width:30px;
     height:30px;
+    transform: translateY(6px);
 }
 
 .copyright{
