@@ -313,7 +313,9 @@ footer .bigicon{
     height:30px;
     transform: translateY(6px);
 }
-
+.con-grid .span img:hover{
+    transform: scale(1.2) translateY(6px);
+}
 .copyright{
     height:40px;
     line-height: 40px;
