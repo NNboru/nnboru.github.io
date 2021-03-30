@@ -441,7 +441,7 @@ img:hover + .bai>div, a:hover .bai>div{
     .bigicon{
         width:30px;
         height:30px;
-        transform: translate(2px,6px);
+        transform: translate(2px,18px);
     }
     .marker div{
         width:6px;
