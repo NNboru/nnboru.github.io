@@ -21,7 +21,7 @@ heada1.onclick=()=>{
 heada2.onclick=()=>{
     projectdiv.scrollIntoView({behavior:'smooth'});
 }
-heada3.onclick=()=>{
+heada3.onclick = document.getElementsByClassName('coffee')[0].onclick = ()=>{
     contactdiv.scrollIntoView({behavior:'smooth'});
 }
 headbar.onclick=()=> menubut.click();
