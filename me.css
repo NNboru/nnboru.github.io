@@ -83,6 +83,7 @@ header, footer{
     border-radius: 25%;
     background-color: ghostwhite;
     border-style: double;
+    outline:0;
 }
 .menuline{
     width: 80%;
