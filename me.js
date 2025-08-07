@@ -1,57 +1,57 @@
 let url = 'https://nnboru.github.io'
-if(navigator.share){
-    myapp.insertAdjacentHTML('beforeEnd',`<a onclick='sharemyapp()'><img src='files/share.png'/></a>`)
+if (navigator.share) {
+    myapp.insertAdjacentHTML('beforeEnd', `<a onclick='sharemyapp()'><img src='files/share.png'/></a>`)
     //myapp.insertAdjacentHTML('beforeEnd',`<a href='whatsapp://send?text=${url}'><img src='files/share.png'/></a>`)
 }
-function sharemyapp(){
+function sharemyapp() {
     navigator.share({
-        title:'pop pic maker',
-        message:'Try it now!\nCreate live wallpaper from your pics, modify its animation and pop it!',
-        url:'https://play.google.com/store/apps/details?id=com.rohan_rawat_nn_pop_pic_maker'
+        title: 'pop pic maker',
+        message: 'Try it now!\nCreate live wallpaper from your pics, modify its animation and pop it!',
+        url: 'https://play.google.com/store/apps/details?id=com.rohan_rawat_nn_pop_pic_maker'
     })
 }
 // heada3.onclick=()=>popup.showModal();
 // cross.onclick=()=>popup.close();
 
-heada1.onclick=()=>{
+heada1.onclick = () => {
     let tmp = document.getElementById('main-content');
-    tmp.scrollIntoView({behavior:'smooth'});
+    tmp.scrollIntoView({ behavior: 'smooth' });
     // window.scrollTo({top:tmp.offsetTop, behavior:'smooth'});
 }
-heada2.onclick=()=>{
-    projectdiv.scrollIntoView({behavior:'smooth'});
+heada2.onclick = () => {
+    projectdiv.scrollIntoView({ behavior: 'smooth' });
 }
-heada3.onclick = document.getElementsByClassName('coffee')[0].onclick = ()=>{
-    contactdiv.scrollIntoView({behavior:'smooth'});
+heada3.onclick = document.getElementsByClassName('coffee')[0].onclick = () => {
+    contactdiv.scrollIntoView({ behavior: 'smooth' });
 }
-headbar.onclick=()=> menubut.click();
+headbar.onclick = () => menubut.click();
 
-let menustate=0;
-menubut.onclick=()=>{
-    if(menustate==0){
+let menustate = 0;
+menubut.onclick = () => {
+    if (menustate == 0) {
         headbar.classList.add('head-show');
-        menustate=1;
+        menustate = 1;
     }
-    else{
-        menustate=0;
+    else {
+        menustate = 0;
         headbar.classList.remove('head-show');
     }
 }
 
-function updateA(atag, elem){
-    let {top,bottom} = elem.getBoundingClientRect(), h=window.innerHeight;
-    let val, num=10;
-    if(top>h || bottom<0) val=0;
-    else if(top>0 && top<h)
-        val=(1-top/h)*num;
-    else if(bottom>h) val=num;
-    else val=bottom/h*num;
+function updateA(atag, elem) {
+    let { top, bottom } = elem.getBoundingClientRect(), h = window.innerHeight;
+    let val, num = 10;
+    if (top > h || bottom < 0) val = 0;
+    else if (top > 0 && top < h)
+        val = (1 - top / h) * num;
+    else if (bottom > h) val = num;
+    else val = bottom / h * num;
 
-    let text, c='#bf3a', blur=2+val/2;
-    text=val==0?'none':
+    let text, c = '#bf3a', blur = 2 + val / 2;
+    text = val == 0 ? 'none' :
         `${val}px ${val}px ${blur}px ${c}, ${val}px -${val}px ${blur}px ${c}, 
         -${val}px -${val}px ${blur}px ${c}, -${val}px ${val}px ${blur}px ${c}, 0 0 ${blur}px ${c}`
-    atag.style['text-shadow']=text;
+    atag.style['text-shadow'] = text;
 }
 
 function updateHead() {
